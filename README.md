@@ -17,9 +17,6 @@ Discord.js framework to build your bot more efficiently with more focus on what 
 - [Developer's Discord](https://discord.com/users/667302589213310997) - @pannh (in case you'd like help)
 - [Discord.js Documentation](https://discordjs.dev/docs/packages/discord.js/14.14.1)
 
-## Table of Content
-TODO
-
 ## Installation
 ```shell
 # npm
