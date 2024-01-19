@@ -81,7 +81,7 @@ export default interface ClientOptions extends DJSClientOptions {
     * 
     * @default `[]`
     */
-   privateGuildIds: string[];
+   privateGuildIds?: string[];
    /**
     * A map of guild IDs to prefixes for the message commands
     * 
