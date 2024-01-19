@@ -1,0 +1,41 @@
+{
+   "name": "discoda",
+   "version": "1.0.0-dev",
+   "description": "Discord.js framework to build your bot more efficiently with more focus on what really matters",
+   "main": "dist/index.Js",
+   "scripts": {
+      "build": "tsc",
+      "test": "node test",
+      "docs": "typedoc"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/PannH/discoda.git"
+   },
+   "keywords": [
+      "discordjs",
+      "djs",
+      "typescript",
+      "framework",
+      "discord",
+      "bot",
+      "slash commands",
+      "commands",
+      "handler"
+   ],
+   "author": "PannH",
+   "license": "MIT",
+   "bugs": {
+      "url": "https://github.com/PannH/discoda/issues"
+   },
+   "homepage": "https://github.com/PannH/discoda#readme",
+   "devDependencies": {
+      "@types/node": "^20.11.2",
+      "typedoc": "^0.25.7",
+      "typedoc-material-theme": "^1.0.2",
+      "typescript": "^5.3.3"
+   },
+   "dependencies": {
+      "discord.js": "^14.14.1"
+   }
+}

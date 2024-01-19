@@ -1,0 +1,11 @@
+{
+   "entryPoints": ["src/index.ts"],
+   "name": "Discoda",
+   "out": "docs",
+   "tsconfig": "tsconfig.json",
+   "plugin": ["typedoc-material-theme"],
+   "themeColor": "#0762b9",
+   "navigation": {
+      "includeGroups": true
+   }
+}
