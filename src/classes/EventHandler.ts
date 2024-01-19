@@ -30,7 +30,7 @@ export default class EventHandler extends Handler<Event> {
                const isSuccess = middleware.predicate.call(null, client, ...args);
 
                if (!isSuccess)
-                  return middleware.failCallback.call(null, client, ...args);
+                  return middleware.failCallback?.call(null, client, ...args);
 
             }
 

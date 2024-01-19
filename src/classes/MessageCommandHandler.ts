@@ -58,7 +58,7 @@ export default class MessageCommandHandler extends Handler<MessageCommand> {
             const isSuccess = await middleware.predicate.call(null, client, message, args);
 
             if (!isSuccess)
-               return middleware.failCallback.call(null, client, message, args);
+               return middleware.failCallback?.call(null, client, message, args);
 
          }
 

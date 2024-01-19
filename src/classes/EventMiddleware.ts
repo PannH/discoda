@@ -25,6 +25,6 @@ export default class EventMiddleware {
     * }, (...) => { ... });
     * ```
     */
-   constructor(public predicate: EventMiddlewarePredicate, public failCallback: EventCallback) {}
+   constructor(public predicate: EventMiddlewarePredicate, public failCallback?: EventCallback) {}
 
 }

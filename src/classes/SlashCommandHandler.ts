@@ -43,7 +43,7 @@ export default class SlashCommandHandler extends Handler<SlashCommand> {
             const isSuccess = await middleware.predicate.call(null, client, interaction);
 
             if (!isSuccess)
-               return middleware.failCallback.call(null, client, interaction);
+               return middleware.failCallback?.call(null, client, interaction);
 
          }
 

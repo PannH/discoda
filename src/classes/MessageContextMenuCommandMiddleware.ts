@@ -24,6 +24,6 @@ export default class MessageContextMenuCommandMiddleware {
     * }, (...) => { ... });
     * ```
     */
-   constructor(public predicate: MessageContextMenuCommandMiddlewarePredicate, public failCallback: MessageContextMenuCommandCallback) {}
+   constructor(public predicate: MessageContextMenuCommandMiddlewarePredicate, public failCallback?: MessageContextMenuCommandCallback) {}
 
 }

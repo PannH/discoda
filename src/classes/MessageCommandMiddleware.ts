@@ -23,6 +23,6 @@ export default class MessageCommandMiddleware {
     * }, (...) => { ... })
     * ```
     */
-   constructor(public predicate: MessageCommandMiddlewarePredicate, public failCallback: MessageCommandCallback) {}
+   constructor(public predicate: MessageCommandMiddlewarePredicate, public failCallback?: MessageCommandCallback) {}
 
 }

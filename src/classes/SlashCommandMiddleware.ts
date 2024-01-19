@@ -25,6 +25,6 @@ export default class SlashCommandMiddleware {
     * }, (...) => { ... });
     * ```
     */
-   constructor(public predicate: SlashCommandMiddlewarePredicate, public failCallback: SlashCommandCallback) {}
+   constructor(public predicate: SlashCommandMiddlewarePredicate, public failCallback?: SlashCommandCallback) {}
 
 }

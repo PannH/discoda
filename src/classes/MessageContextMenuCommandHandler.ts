@@ -41,7 +41,7 @@ export default class MessageContextMenuCommandHandler extends Handler<MessageCon
             const isSuccess = await middleware.predicate.call(null, client, interaction);
 
             if (!isSuccess)
-               return middleware.failCallback.call(null, client, interaction);
+               return middleware.failCallback?.call(null, client, interaction);
 
          }
 

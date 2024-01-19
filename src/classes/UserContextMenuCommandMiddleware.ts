@@ -23,6 +23,6 @@ export default class UserContextMenuCommandMiddleware {
     *    middlewares: [IsNotBot]
     * }, (...) => { ... });
     */
-   constructor(public predicate: UserContextMenuCommandMiddlewarePredicate, public failCallback: UserContextMenuCommandCallback) {}
+   constructor(public predicate: UserContextMenuCommandMiddlewarePredicate, public failCallback?: UserContextMenuCommandCallback) {}
 
 }
