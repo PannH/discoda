@@ -8,5 +8,9 @@ src/
 # test
 test/
 
+# docs
+docs/
+typedoc.json
+
 # ts
 tsconfig.json
