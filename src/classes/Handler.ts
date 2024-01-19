@@ -34,7 +34,7 @@ export default class Handler<ItemType> extends Collection<string, ItemType> {
 
       for (const fileName of readdirSync(this._path)) {
 
-         const absolutePath = join(__dirname, '..', '..', join(this._path, fileName));
+         const absolutePath = join(__dirname, '..', '..', '..', '..', join(this._path, fileName));
          const relativePath = relative(__dirname, absolutePath);
 
          const item: ItemType = require(relativePath).default;
