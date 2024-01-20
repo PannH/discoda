@@ -1,6 +1,6 @@
 {
    "name": "discoda",
-   "version": "1.1.4",
+   "version": "1.1.5",
    "description": "Discord.js framework to build your bot more efficiently with more focus on what really matters, rather than boilerplate code",
    "main": "dist/index.js",
    "scripts": {
