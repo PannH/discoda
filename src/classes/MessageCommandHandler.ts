@@ -50,7 +50,7 @@ export default class MessageCommandHandler extends Handler<MessageCommand> {
          if (messageCommand.options.nsfw && !(message.channel as BaseGuildTextChannel).nsfw)
             return;
 
-         if (!message.member.permissions.has(messageCommand.options.defaultMemberPermissions))
+         if (!message.member?.permissions?.has(messageCommand.options.defaultMemberPermissions))
             return;
 
          for (const middleware of messageCommand.options.middlewares) {
