@@ -25,7 +25,7 @@ export default class MessageCommandHandler extends Handler<MessageCommand> {
       client.addListener('messageCreate', async (message: Message) => {
 
          const content = message.content.trim();
-         const prefix = client.guildPrefixes[message.guild.id] ?? client.prefix;
+         const prefix = client.guildPrefixes[message.guild?.id] ?? client.prefix;
 
          if (!content.startsWith(prefix) || message.author.bot)
             return;
@@ -40,7 +40,7 @@ export default class MessageCommandHandler extends Handler<MessageCommand> {
          if (messageCommand.options.ownerOnly && !client.ownerIds.includes(message.author.id))
             return;
 
-         if (messageCommand.options.privateGuildOnly && !client.privateGuildIds.includes(message.guild.id))
+         if (messageCommand.options.privateGuildOnly && !client.privateGuildIds.includes(message.guild?.id))
             return;
 
          const dmChannelTypes = [ChannelType.DM, ChannelType.GroupDM];
